@@ -7,7 +7,15 @@
 2. dependency: lombok, Spring Data JPA, MySql Driver, Spring Web(設定會出現在 pom.xml 中)
 3. 選擇 Generate
 
-下載 [modelmapper](http://modelmapper.org/downloads/) .jar 並引入
+直接透過 maven (local 要安裝 maven)
+```xml
+<dependency>
+  <groupId>org.modelmapper</groupId>
+  <artifactId>modelmapper</artifactId>
+  <version>3.0.0</version>
+</dependency>
+```
+若失敗則下載 [modelmapper](http://modelmapper.org/downloads/) .jar 並引入
 * maven 沒辦法直接 add dependency - 應該是官方的問題 [issue](https://github.com/modelmapper/modelmapper/issues/684)
 
 範例 .sql 在 src/main/others
