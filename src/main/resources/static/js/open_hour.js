@@ -1,4 +1,4 @@
-fetch(`http://localhost:8080/rev/ls`, {
+fetch(`/rev/ls`, {
     method: 'GET',
 }).then((response) => {
     console.log(response);
