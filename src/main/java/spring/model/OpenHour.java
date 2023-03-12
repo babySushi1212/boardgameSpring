@@ -11,16 +11,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Entity
-@Table(name = "OPENNING_TIME")
+@Data // Lombok: Gene getter/setter by @getter/@setter
+@AllArgsConstructor // Lombok: Auto gene args constructor
+@NoArgsConstructor // Lombok: read above
+@Entity // JPA: mark this class as entity
+@Table(name = "OPENNING_TIME")// JPA: specify the table this class mapping to
 public class OpenHour {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "OPENTIME_NO")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY) // AI
+    @Id // JPA: primary key
+    @Column(name = "OPENTIME_NO")// JPA: map to column
     private int openTimeNo;
 
     @Column(name = "WEEK")
