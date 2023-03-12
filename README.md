@@ -10,6 +10,7 @@
 下載 [modelmapper](http://modelmapper.org/downloads/) .jar 並引入
 * maven 沒辦法直接 add dependency - 應該是官方的問題 [issue](https://github.com/modelmapper/modelmapper/issues/684)
 
+範例 .sql 在 src/main/others
 
 ## Config
 
