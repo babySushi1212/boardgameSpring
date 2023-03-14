@@ -20,9 +20,9 @@ Frontend
 * 目前設定好 MySql 資料庫連線即可
 ```xml
 server.port=8082
-webapp.datasource.username=root
-webapp.datasource.password=abcd1234
-webapp.datasource.url=jdbc:mysql://localhost:3306/boardgame1
+webapp.datasource.username=xxx
+webapp.datasource.password=xxx
+webapp.datasource.url=jdbc:mysql://localhost:3306/boardgameDev
 ```
 
 ## Folder Structure
