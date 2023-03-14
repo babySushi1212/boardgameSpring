@@ -27,7 +27,7 @@ webapp.datasource.url=jdbc:mysql://localhost:3306/boardgameDev
 
 ## Folder Structure
 
-後端程式放在 `./java/webapp/
+後端程式放在 `./java/webapp/`
 * 下面會在再分為 pojo, repository, service, dto, controller
 * 分別對應 webapp 的 `@Eneity`, `@JpaRepository`, `@Service`, `DTO`, `@RestController`
 
