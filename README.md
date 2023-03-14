@@ -1,6 +1,7 @@
 
 # Usage
 
+更新後看 Empxxx 的程式就好
 Backend
 * 建立範例資料庫: `.\src\main\others\data-MySQL.sql`
 * 設定 properties: `.\src\main\resources\application.properties
