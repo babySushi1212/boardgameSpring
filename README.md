@@ -4,7 +4,7 @@
 更新後看 Empxxx 的程式就好
 Backend
 * 建立範例資料庫: `.\src\main\others\data-MySQL.sql`
-* 設定 properties: `.\src\main\resources\application.properties
+* 設定 properties: `.\src\main\resources\application.properties`
 * 透過 `.\src\main\java\webapp\BoardGameApiApplication.java` 執行
 * 測試是否打的到後端 API: `localhost:8082/emp/ls`
 
