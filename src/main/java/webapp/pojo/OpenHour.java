@@ -1,9 +1,7 @@
-package spring.model;
+package webapp.pojo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.sql.Time;
@@ -31,4 +29,5 @@ public class OpenHour {
 
     @Column(name = "OPENTIME_END")
     private Time openTimeEnd;
+
 }
