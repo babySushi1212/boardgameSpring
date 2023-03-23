@@ -1,9 +1,10 @@
 
 # Usage
 
+更新後看 Empxxx 的程式就好
 Backend
 * 建立範例資料庫: `.\src\main\others\data-MySQL.sql`
-* 設定 properties: `.\src\main\resources\application.properties
+* 設定 properties: `.\src\main\resources\application.properties`
 * 透過 `.\src\main\java\webapp\BoardGameApiApplication.java` 執行
 * 測試是否打的到後端 API: `localhost:8082/emp/ls`
 
@@ -19,14 +20,14 @@ Frontend
 * 目前設定好 MySql 資料庫連線即可
 ```xml
 server.port=8082
-webapp.datasource.username=root
-webapp.datasource.password=abcd1234
-webapp.datasource.url=jdbc:mysql://localhost:3306/boardgame1
+webapp.datasource.username=xxx
+webapp.datasource.password=xxx
+webapp.datasource.url=jdbc:mysql://localhost:3306/boardgameDev
 ```
 
 ## Folder Structure
 
-後端程式放在 `./java/webapp/
+後端程式放在 `./java/webapp/`
 * 下面會在再分為 pojo, repository, service, dto, controller
 * 分別對應 webapp 的 `@Eneity`, `@JpaRepository`, `@Service`, `DTO`, `@RestController`
 
