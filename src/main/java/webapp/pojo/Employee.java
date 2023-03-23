@@ -5,6 +5,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.sql.Time;
 import lombok.AllArgsConstructor;
@@ -44,5 +47,10 @@ public class Employee {
     @Column(name = "EMPLOYEE_STATUS")
     private boolean employeeStatus;
 
-    // constructors, getters, and setters
+    @ManyToOne
+    @JoinColumn(name = "ROLE_NO",
+        insertable = false,
+        updatable = false)
+    private Role role;
+
 }

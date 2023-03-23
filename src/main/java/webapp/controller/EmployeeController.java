@@ -31,7 +31,7 @@ public class EmployeeController {
     @PostMapping("/test_post")
     public boolean test_post(@RequestBody EmployeeDTO emp){
         System.out.println("Post Success");
-        System.out.printf("%s %s", emp.getEmployeeName(), emp.getEmployeePhone());
+        System.out.printf("%s %s", emp.getEmployeeName(), emp.getEmployeeEmail());
         return true;
     }
 }
