@@ -34,4 +34,28 @@ public class ReservationService {
         return openHourDTO;
     }
 
+    public Integer updateAllTime(List<OpenHourDTO> dtos) {
+        try {
+            openHourRepository.saveAll(toEntityList(dtos));
+            return 1;
+        } catch (Exception e){
+            return 0;
+        }
+    }
+
+
+    private static OpenHour toEntity(OpenHourDTO dto) {
+        OpenHour entity = new OpenHour();
+        entity.setOpenTimeNo(dto.getOpenTimeNo());
+        entity.setWeek(dto.getWeek());
+        entity.setOpenTimeStart(dto.getOpenTimeStart());
+        entity.setOpenTimeEnd(dto.getOpenTimeEnd());
+        return entity;
+    }
+
+    private static List<OpenHour> toEntityList(List<OpenHourDTO> dtoList) {
+        return dtoList.stream()
+                .map(ReservationService::toEntity)
+                .collect(Collectors.toList());
+    }
 }

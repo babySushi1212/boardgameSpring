@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Data // Lombok: Gene getter/setter by @getter/@setter
 @AllArgsConstructor // Lombok: Auto gene args constructor
 @NoArgsConstructor // Lombok: read above
-@Entity
+@Entity // 對應 DB 的實體
 @Table(name = "EMPLOYEE")
 public class Employee {
 

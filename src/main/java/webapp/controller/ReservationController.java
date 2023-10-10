@@ -24,17 +24,8 @@ public class ReservationController {
         return reservationService.getAllOpenHour();
     }
 
-    @Autowired // DI 等下藥刪除
-    private OpenHourRepository openHourRepository;
-
-    @GetMapping("/test")
-    public int test(@RequestParam String week) {
-        return openHourRepository.findByUsername(week);
-    }
-
-    @PostMapping("/test_post")
-    public void test_post(@RequestBody OpenHourDTO dto){
-        System.out.println("Post Success");
-        System.out.printf("%s %s %s", dto.getWeek(), dto.getOpenTimeEnd(), dto.getOpenTimeEnd());
+    @PostMapping("/save-all")
+    public Integer test_post(@RequestBody List<OpenHourDTO> dtos){
+        return reservationService.updateAllTime(dtos);
     }
 }
